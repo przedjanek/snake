@@ -37,7 +37,7 @@ void Snake::step(){
 		move();
 		steps_i=1;
 	}
-	else if(steps_i==step_threshold) set_dest(head.getLoc()+head.get_dir());
+	else if(steps_i==step_threshold) head.set_dest(head.getLoc()+head.get_dir());
 }
 
 void Snake::grow()
